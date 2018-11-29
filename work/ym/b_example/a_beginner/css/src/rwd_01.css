@@ -1,0 +1,59 @@
+ /*rwd_01.css */
+
+#wrap{width: 960px; height: 1300px; background-color: #aaa;}
+
+
+/* mobile */
+@media screen and (max-width:480px) {
+
+  #wrap{width: 100%; height:auto; min-height:600px; background-color: #2e3192; color:#ddd;}
+  #headBox{width:auto; height:100px;background-color: #fa0;}
+  #headBox>.logo{float:right;width:45px;height: 100px;background-color: #32e;}
+  #adBox{width:auto;height:400px;background-color: #444;}
+  #conBox{width:auto; height: 600px; background-color: #20d;}
+  #conBox>ul>li{float:left;width:240px;height: 200px;}
+  #conBox>ul>.con1{background-color: #262;}
+  #conBox>ul>.con3{background-color: #262;}
+    #conBox2{width:auto; height: 100px; background-color: #dd3;}
+  #conBox3{width: auto; height:200px;background-color: #d3e;}
+  #footBox{width:auto;height: 100px;background-color: #da2;}
+
+}/* mobile end */
+
+
+/* tablet */
+@media screen and (min-width:481px) and (max-width:768px) {
+
+    #wrap{width:100%; background-color: #aaa; color:#ddd;}
+  #headBox{width:auto; height:150px;background-color: #fa0;}
+  #headBox>.logo{width:100px;height: 100px;background-color: #32e;}
+  #adBox{width:auto;height:300px;background-color: #444;}
+  #conBox{width:auto; height: 400px; background-color: #20d;}
+  #conBox>ul>li{float:left; width:195px;height: 400px;}
+  #conBox>ul>.con1{background-color: #262;}
+  #conBox>ul>.con3{background-color: #262;}
+  #conBox2{width:auto; height: 100px; background-color: #dd3;}
+   #conBox3{width: auto; height:200px;background-color: #d3e;}
+  #footBox{width:auto;height: 100px;background-color: #da2;}
+
+ 
+
+}/* tablet end*/
+
+/* pc */
+@media screen and (min-width:769px) {
+   #wrap{width: 960px;background-color: #2e3192; color:#ddd;}
+  #headBox{width:auto; height:150px;background-color: #fa0;}
+  #headBox>.logo{width:100px;height: 100px;background-color: #32e;}
+  #adBox{width:auto;height:300px;background-color: #444;}
+  #conBox{width:auto; height: 400px; background-color: #20d;}
+  #conBox>ul>li{float:left; width:195px; height: 400px;}
+  #conBox>ul>.con1{background-color: #262;}
+  #conBox>ul>.con3{background-color: #262;}
+  #conBox2{display: none;}
+  #conBox3{display: none;}
+  #footBox{width:auto;height: 100px;background-color: #da2;}
+
+  
+
+}/*pc end

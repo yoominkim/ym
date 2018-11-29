@@ -1,0 +1,117 @@
+ @charset"UTF-8";
+/* rwd_exam01.css */
+
+#wrap{width:100%; height:auto; background-color: #acc;}
+#headBox{ width:100%;height:480px;height:30rem;background-color: #BBAA77}
+#headBox>#gnb{width:100%; height:40px; height:2.5rem; background-color: #111}
+#headBox h1{float:left; margin-top:5px;margin-top:0.3125rem; margin-left:30px; margin-left:1.875rem;width:100px;
+	width:6.25rem; height:30px; height:1.875rem; background-color:#33B88F; font-size: 1.3rem;}
+#headBox .gnb_01{float:right; margin-top:4px; margin-top:0.25rem; margin-right:5px; margin-right:0.1875rem; width:100px; width:6.25rem; height: 30px; height: 1.875rem; background-color:#33B88F;}
+#headBox .firstlist_box{margin-top:200px; margin-top:12.5rem;
+	 margin-left:10%; width:100%; height:340px; height:21.25rem;}
+#headBox .firstbox{margin-bottom:40px; margin-bottom:2.5rem; width: 80%; height: 60px; height: 3.75rem;background-color: #fff}
+#adBox{width:100%; height: 430px; height: 20.625rem;background-color: #547D77;}
+#adBox>ul{padding-top: 100px; padding-top: 6.25rem; box-sizing: border-box; 
+	width:100%; height: 285px; height: 17.8125rem;}
+#adBox>ul>li{border:3px solid #547D77; float:left; width:48%; height: 100%; 
+	background-color: #fff;}
+#conBox{width:100%; height: 430px; height: 26.875rem; background-color: #957DE9;}
+#conBox>.con_box{margin-left:15px; margin-left:0.9375rem; 
+	padding-top:40px; padding-top:2.5rem; box-sizing: border-box; 
+	width:100%; height: 100%;}	
+#conBox>ul>li{margin-bottom:10px; margin-bottom:0.625rem; width:90%; height: 103px; height: 6.4375rem; background-color: #fff}
+#footer{padding-top: 7px; padding-top: 0.4375rem; box-sizing: border-box;width:100%; height: 60px; height: 3.75rem; background-color: #333333;}
+#footer .foot_logo{margin:auto;  width:340px;width:21.25rem; 
+	height: 45px; height: 2.8125rem; background-color: #33B88F;}
+
+
+/* mob start */
+@media screen and (max-width: 480px){
+	#wrap{background-color: #a42}
+	#headBox{width:100%;height:720px; height:45rem; }
+	#headBox .gnb_02{display:none;}
+	#headBox .gnb_03{display:none;}
+	#headBox .gnb_04{display:none;}
+	#adBox{width:100%; height: 490px; height: 30.625rem;}
+	#conBox{width:100%; height: 640px; height: 40rem;}
+	
+
+}
+
+/*mob end*/
+
+/* tab start */
+@media screen and (min-width: 481px) and (max-width: 768px){
+	#wrap{background-color: #d23}
+	#headBox{width:100%; height:450px; height:28.125rem;}
+	#headBox .gnbbox{float:right;width:250px; height: auto;}
+	#headBox h1{float:left; margin-top:5px; margin-top:0.3125rem; }
+	#headBox .gnb_01{float:right;}
+	#headBox .gnb_02{display:none;}
+	#headBox .gnb_03{display:none;}
+	#headBox .gnb_04{display:none;}
+	#headBox .firstlist_box{margin-top:50px; margin-top:3.125rem; 
+		margin-left:10px; margin-left:0.625rem; 
+		width:100%;height:100%;}
+	#headBox  .firstbox_01{float: left; width:50px; width:3.125rem; height:300px; height:18.75rem;}
+	#headBox  .firstbox_02{float: right; margin-right:20px; margin-right:1.25rem;
+		width:50px; width:3.125rem; height:300px; height:18.75rem;}
+	#headBox  .firstbox_03{display: none;}
+	#headBox  .firstbox_04{display: none;}
+	#adBox{width:100%; height: 180px; height: 11.25rem;}
+	#adBox>ul{margin-left:20px; margin-left:1.25rem; padding-top: 25px; padding-top: 1.5625rem; box-sizing: border-box; 
+		width:730px; width:45.625rem; height: 120px; height: 7.5rem;}
+	#adBox>ul>li{margin-right:30px; margin-right:1.875rem; float:left; width:136px; width:8.5rem; height: 120px; height: 7.5rem; 
+	background-color: #fff;}
+	#conBox{width:100%; height: 540px; height: 33.75rem;}
+	#conBox>.con_box{margin:0; padding:0; width:100%;height: 100%;}	
+	#conBox>ul>li{float:left; width:50%; height: 100%;  background-color: #fff}
+	#conBox .conli_1{background-color:#957DE9 }
+	#conBox .conli_2{background-color:#95ABE9 }
+	#conBox .conli_3{display: none;}
+	#conBox .conli_4{display: none;}
+	#conBox .conli_5{display: none;}
+	#footer{width:100%; height: 120px; height: 7.5rem;}
+	#footer>.add_box{margin:auto;  width:700px; width:43.75rem; height: 45px; height: 2.8125rem;}
+	#footer .foot_logo{float:left; width:250px;  width:15.625rem; height: 45px; height: 2.8125rem;
+		background-color: #33B88F;}
+	#footer .foot_add{float:right; width:440px;  width:27.5rem; height: 45px; height: 2.8125rem; background-color: #33B88F;}
+}/*tab end*/
+
+/* pc start */
+@media screen and (min-width: 769px){
+	#wrap{background-color: #fff}
+	#headBox{width:100%;height:450px; height:28.125rem; }
+	#headBox .gnb_box{float:right; width:430px; width:26.875rem; height: 30px; height: 1.875rem;}
+	#headBox .gnbs{float: left; margin-top:4px; margin-top:0.25rem; margin-right:3px; margin-right:0.1875rem; width:100px; width:6.25rem; height: 30px; height: 1.875rem; background-color:#33B88F; }
+	#headBox .firstlist_box{margin-top:50px; margin-top:3.125rem; 
+		margin-left:10px; margin-left:0.625rem; 
+		width:100%;height:100%;}
+	#headBox  .firstbox_01{float: left; width:50px; width:3.125rem; height:300px; height:18.75rem;}
+	#headBox  .firstbox_02{float: right; margin-right:20px; margin-right:1.25rem;
+		width:50px; width:3.125rem; height:300px; height:18.75rem;}
+	#headBox  .firstbox_03{display: none;}
+	#headBox  .firstbox_04{display: none;}
+	#adBox{margin:auto; width:960px; width:60rem; height: 210px; height: 13.125rem;}
+	#adBox>ul{margin-left:70px; margin-left:4.375rem; padding-top: 30px; padding-top:1.875rem;  box-sizing: border-box; 
+		width:884px; width:55.25rem; height: 120px; height: 7.5rem;}
+	#adBox>ul>li{margin-right:40px; margin-right:2.5rem; float:left; width:170px; height: 150px; 
+	background-color: #fff;}
+	#conBox{margin:auto; width:960px; width:60rem; height: 540px; height: 33.75rem;}
+	#conBox>.con_box{margin:0; padding:0; width:100%;height: 100%;}	
+	#conBox>ul>li{margin:0; float:left; width:33.333333%; height: 100%;  background-color: #fff}
+	#conBox .conli_1{background-color:#957DE9;}
+	#conBox .conli_2{background-color:#95ABE9;}
+	#conBox .conli_3{background-color:#95D2E9;}
+	#conBox .conli_4{display: none;}
+	#conBox .conli_5{display: none;}
+	#footer{width:100%; height: 120px; height: 7.5rem;}
+	#footer>.add_box{margin:auto;  width:960px; width:60rem; 
+		height: 45px; height: 2.8125rem;}
+	#footer .foot_logo{float:left; width:250px;  width:15.625rem; 
+		height: 45px; height: 2.8125rem;
+		background-color: #33B88F;}
+	#footer .foot_add{float:right; width:670px;  width:41.875rem; 
+		height: 45px; height: 2.8125rem; background-color: #33B88F;}
+
+}/*pc end*/

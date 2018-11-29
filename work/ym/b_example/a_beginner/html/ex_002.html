@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" comtent="IE-edge">
+  <title>ex_02</title>
+  
+
+
+  <style>
+  html,body,h1,h2,h3,h4,h5,h6,div,ul,ol,li,p,dd,dt{margin:0; padding:0;}
+  ul,ol,li{list-style:none;}
+  .clearfix{clear: both;}
+
+  #wrap{margin: 0 auto; width: 940px; height:1127px;}
+    /* header */
+  #headBox{width:100%; height: 70px; background-color: #ffd;}
+  #headBox>h1{float:left; width:87px; height:70px; background-color: #dd4;}
+    .login_box{float:right; width:130px; height:100%; background-color: #fa0;}
+    .login_box>ul{width:100%; height:100%;}
+    .login_box li{float:left; height:100%;}
+    .login_01{width: 76px; background-color: #acc;}
+    .login_02{width: 54px; background-color: #7cc;}
+
+    .menu_box{float:right; width:600px; height:100%; background-color: #afa;}
+    .menu_box>ul{float:left; width:100%; height:100%;background-color:#7ad;}
+    .menu_box li{float:left; margin-right:18px; margin-left:18px; width:46px; height:70px;}
+    .menu_box .menu_07{margin-right:0px; width:86px;}
+
+    /* adBox */
+  #adBox{width: 100%; height: 430px; background-color: #aef;}
+  #adBox>.h2_box{float:left; width:306px; height: 126px; background-color:#444; margin: 0 auto; }
+  #adBox h2{font-weight: bold; font-style:#fff; }
+  #adBox ul{float:left; width: 940px; height:100px;}
+  #adBox ul>li{float:left; width: 940px; height: 100px; background-color: #33d;}
+  #adBox ul>li>div{float:left; width:156px; height:100px;}
+
+
+   /* conBox */
+  #conBox{width:940px; height: auto; background-color: #fff;}
+  #conBox>#content{width:940px; height:auto; padding-bottom:40px; padding-left:24px; padding-top:40px; box-sizing:border-box;  background-color:#ddd;}
+  #conBox .content_box{float:left; width: 282px; height:226px;}
+  #conBox ul{width: 282px;height:226px;background-color:#a9a;}
+  #conBox ul>li{margin-right:23px; width:auto; height:auto;}
+  #conBox .conbox_title{width:auto; height:46px;background-color:#500;}
+
+
+   /* footer */
+  #footBox{width: 100%; height:73px; background-color:#555;}
+  #footBox>h2{float:left; width: 86px; height:46px; background-color:#f44;}
+  #footBox div{float:left; padding-left:15px;}
+    #footBox .address_text{margin-right:5px; float:right; width: auto; height:auto; background-color:#fff;}
+
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+
+    <!-- layout -->
+    <header id="headBox">
+     <h1>logo</h1>
+
+      <div class="login_box">
+        <ul>
+          <li class="login_01">language</li>
+          <li class="login_02">로그인</li>
+         </ul>
+      </div>     
+      <div class="menu_box">
+          <ul>
+             <li class="menu_01">관람</li>
+              <li class="menu_02">전시</li>
+              <li class="menu_03">교육</li>
+              <li class="menu_04">연구</li>
+              <li class="menu_05">소식</li>
+              <li class="menu_06">참여</li>
+              <li class="menu_07">전시관 소개</li>
+          </ul>
+      </div>
+
+
+    </header>
+    <!-- header -->
+
+    <div id="adBox">
+      <div class="h2_box">
+      <h2>국토발전전시관</h2>
+       <p>국토발전,성장과 균형을 넘어<br /> 새로운 세상으로</p>
+     </div>
+
+      <nav>
+        <ul>
+          <li>
+            <div class="nav_01">위치/교통권</div>
+            <div class="nav_02">층별안내</div>
+            <div class="nav_03">편의시설</div>
+            <div class="nav_04">단체관광</div>
+            <div class="nav_05">장애인관람</div>
+            <div class="nav_06">문의하기</div>
+         </li>
+       </ul>
+      </nav>
+    </div>
+    <!-- adBox -->
+
+    <div id="conBox">
+      <div id="content">
+        <div class="content_box_01 content_box">
+          <ul>
+            <li class="conbox_title">사이버전시</li>
+            <li class="conbox_text_01">사이버전시내용</li>
+          </ul>
+        </div>
+        <div class="content_box_02 content_box">
+          <ul>
+            <li class="conbox_title">운영시간</li>
+            <li class="conbox_text_01">운영시간내용</li>
+          </ul>
+        </div>
+     
+        <div class="content_box_03 content_box">
+          <ul>
+            <li class="conbox_title">교육프로그램</li>
+            <li class="conbox_text_01">교육프로그램내용</li>
+          </ul>
+        </div>
+        <div class="content_box_04 content_box">
+          <ul>
+            <li class="conbox_title">홍보영상</li>
+            <li class="conbox_text_02">홍보영상내용</li>
+          </ul>
+        </div>
+        <div class="content_box_05 content_box">
+          <ul>
+            <li class="conbox_title">문화행사</li>
+            <li class="conbox_text_02">문화행사내용</li>
+          </ul>
+        </div>
+        <div class="content_box_06 content_box">
+          <ul>
+            <li class="conbox_title">전시관소식</li>
+            <li class="conbox_text_02">전시관소식내용</li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+       </div>
+      </div>
+      
+  <!-- conBox -->
+  
+    <footer id="footBox">
+      <h2>logo2</h2>
+     <address>
+      <div class="adress">04516 서울특별시~</div>
+      <div class="tel">02-000-0000</div>
+      <br /><div class="copyright">copyright</div>
+    </address>
+    <div class="address_text">개인정보처리방침</div>
+    </footer>
+
+  </div>
+
+  <!-- script -->
+
+</body>
+</html>
