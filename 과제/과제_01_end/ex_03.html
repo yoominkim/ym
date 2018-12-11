@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ko-KR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" comtent="IE-edge">
+  <title>ex_03</title>
+  <style>
+    html,body,h1,h2,h3,h4,h5,h6,div,ul,ol,li,p,dd,dt{margin:0; padding:0;}
+    ul,ol,li{list-style:none;}
+    .clearfix{clear: both;}
+    a:focus{color:#fff; outline-offset: 5px;}
+    a:hover{color:#fff; font-style:bold;}
+    a{text-decoration: none; color:#444;}
+
+    #wrap{width:940px; height:auto; margin:0 auto;}
+    /* headBox */
+    #headBox{ width:940px; height:116px; background-color:#efe;}
+    #headBox>h1{ margin: 0 auto; width:146px; height:60px; background-color:#ff7fff; text-align: center;}
+    #headBox ul{margin:0 auto; width:796px; height:56px; background-color:#c7cfdb;}
+    #headBox ul>li{float:left; padding-top:15px; box-sizing: border-box; width:112px; height:100%; background-color:#c7cfdb; text-align: center;}
+
+    /* adBox */
+    #adBox{padding-top:150px; box-sizing: border-box;width:940px;height:490px; background-color: #f6d7d4;}
+    #adBox>h2{padding-top: 22px; box-sizing: border-box; margin-left: 256px; width:426px; height:116px; text-align: center; background-color: #ddd;}
+
+    /* KGC BRAND */
+    #brandBox{width:940px; height:612px; padding-top:60px; box-sizing:border-box;background-color: #333}
+    #brandBox>h2{margin-left:312px; margin-bottom: 18px; padding-top:20px; box-sizing:border-box; width:312px;height:70px; background-color: #8784b1; text-align: center;}
+    #brandBox .menu_box{width:940px; height:96px; background-color: #ddd;}
+    #brandBox .menu_box>ul{float:left; width:940px; height:96px;}
+    #brandBox .menu_box>ul>li{float:left; padding-top: 30px; box-sizing: border-box; width:156px;height:96px; text-align: center;}
+    #brandBox .green{height:96px; background-color: #7fceca;}
+    #brandBox .content{float: left; width: 312px; height: auto; background-color:#a98a9b;}
+    #brandBox .image{float: left; width: 318px; height: 244px; background-color:#aaa;}
+    #brandBox .content_02{background-color: #f9f;}
+    #brandBox .content_name{float: left; width: 318px; height: 24px; 
+     background-color: #ddd}
+    #brandBox .h-02{background-color: #777}
+    #brandBox .content_text_01{width:auto; height: 40px; background-color: #99e;}
+    #brandBox .content_text_02{width:auto; height: 70px; background-color: #77d;}
+    #brandBox .content_text_03{width:auto; height: 70px; background-color: #99e;}
+
+    /* eventBox */
+    #eventBox{padding-top:25px; box-sizing:border-box; width:940px; height:auto; background-color: #eee;;}
+    #eventBox>h2{margin-left:312px; margin-bottom: 26px; padding-top:20px; box-sizing:border-box; width:312px;height:70px; background-color: #8784b1; text-align: center;}
+    #eventBox .image_01{float:left; padding-top: 38px; box-sizing: border-box; width: 468px; height: 586px; background-color: #999}
+    #eventBox .event_image_01{margin-left: 24px;  width:406px; height:440px; background-color: #5f7e6c}
+    #eventBox .event_image_name{margin-left: 24px; width:406px; height:66px; background-color: #fff}
+    #eventBox .image_02{float:left; padding-top: 38px; box-sizing: border-box; width: 472px; height: 586px; background-color: #946796}
+    #eventBox .event_image_02{float:left; margin-bottom: 10px; margin-left: 30px; width:404px; height: 148px; background-color: #5f7e6c}
+    #eventBox .image_03_box{padding-top: 16px; box-sizing: border-box; float:right; width:456px; height:180px; background-color: #a9b299}
+    #eventBox .event_image_03{float:left; margin-left: 16px; width:404px; height: 148px; background-color: #5f7e6c}
+    #eventBox .event_image_04{float:left; margin-top: 10px; margin-left: 30px; width:404px; height: 148px; background-color: #5f7e6c}
+
+    /* storeBox */
+    #storeBox{padding-top:78px; box-sizing:border-box; width:940px;height:242px; background-color: #dfdfdf}
+    #storeBox>h2{ float:left; margin-left:94px; padding:10px; box-sizing:border-box;  width: 202px; height: 50px; background-color: #be7f7f; text-align: center;}
+    #storeBox .kgcstore_srch{margin-left:62px; margin-right:54px; float:right; padding-top:8px; padding-left:20px; box-sizing:border-box; width:524px;height:50px;background-color: #7fb897}
+    #storeBox .kgcstore_map{margin-top:12px; margin-right:100px; float:right; padding-top:8px; box-sizing:border-box; width:auto; height:38px; background-color: #c1a67f}
+
+    /* contentBox */
+    #contentBox{padding-top:66px; box-sizing:border-box; width:940px; height:650px; background-color: #a69f8f}
+    #contentBox ul{ float:left; margin-right:28px; float:left; width:272px; height:374px; background-color: #c4abd0}
+    #contentBox .conbox_01{margin-left:20px;}
+    #contentBox h3{margin-left:28px; margin-right:28px; 
+     padding-top:6px; box-sizing:border-box; float:left; width:264px; height:46px; background-color: #e5bbbb; text-align: center; }
+    
+    #contentBox .con_image{margin-top:58px; margin-left:18px;width:234px; height:140px; background-color: #b482b4;}
+    #contentBox .con_title{margin-top:46px; margin-left:18px; width:234px; height:56px; background-color: #62a5dd}
+    #contentBox .con_text{margin-left:18px; width:234px; height:52px; background-color: #e371a8}
+    #contentBox .con_adbox{margin-top:24px; margin-left:44px; width:852px; height:94px; background-color: #756678}
+    #contentBox .adbox_01{margin-left:16px; margin-top:24px; padding-top:10px; box-sizing:border-box; float: left;width:190px; height:48px; text-align: center; background-color: #8e2368}
+    #contentBox .adbox_02{margin-right:38px; margin-top:24px; padding-top:10px; box-sizing:border-box; float: right;width:240px; height:48px; text-align: center; background-color: #8e2368}
+
+    /* snsBox */
+    #snsBox{padding-top:60px; box-sizing:border-box; width:940px; height:724px; background-color: #ddf;}
+    #snsBox>h2{margin-left:398px; padding-top:14px; box-sizing:border-box; width:146px; height:66px; background-color: #e5bbbb; text-align: center;}
+    #snsBox .snsimage_box{margin-top:24px; width:940px; height:468px; background-color: #eee;}
+    #snsBox ul{width:940px; height:484px;}
+    #snsBox ul>li{float:left; width:232px; height:234px; text-align: center;}
+    #snsBox .snsimage{width:238px ;background-color: #6ca483;}
+
+    /* siteMap */
+    #siteMap{padding-top:14px; box-sizing: border-box; width:940px; height:240px; background-color: #f3d4d1;}
+    #siteMap>div{margin-left: 22px;float:left; width:112px; height:38px; background-color: #c1acd0; text-align: center;}
+    #siteMap ul{ width:112px; height:190px; background-color: #98e;}
+    #siteMap .brand{margin-left: 70px;}
+
+/* productMap */
+    #productMap {padding-top: 6px;box-sizing:border-box; width:940px; height: 220px; background-color: #e8acba}
+    #productMap>h3{margin-left:350px; margin-bottom:10px; width:200px; height: 30px; background-color: #c8c4c6; text-align: center;}
+    #productMap div{margin-left: 8px; float: left; width:88px; height: 32px; text-align: center; background-color: #c46;}
+    #productMap .productmap_sub_01{margin-left:24px;}
+    #productMap ul{height:116px; background-color: #f73;}
+    #productMap li{width:90px; height: 30px;}
+
+/*footerBox*/
+    #footerBox{width:940px; height:214px; background-color: #ddd;}
+    #footerBox .menu_box{float:left; width:102px; height:40px;background-color: #fff;}
+    #footerBox .menu_box>ul{float:left; width:102px; height:40px;background-color: #fff;}
+
+  </style>
+</head>
+<body>
+ <div id="wrap">
+ <header id="headBox">
+  <h1>logo</h1>
+  <div class="menu_box">
+   <ul>
+    <li class="menu_01"><a href="#">브랜드</a></li>
+    <li class="menu_02"><a href="#">제품보기</a></li>
+    <li class="menu_03"><a href="#">인삼이야기</a></li>
+    <li class="menu_04"><a href="#">이벤트</a></li>
+    <li class="menu_05"><a href="#">매장안내</a></li>
+    <li class="menu_06"><a href="#">고객센터</a></li>
+    <li class="menu_07"><a href="#">회사소개</a></li>
+   </ul>
+  </div>
+ </header>
+ <!-- header -->
+
+ <div id="adBox">
+  <h2>119년 지켜온 역사와 전통으로<br>정성을 담아 고객님께 드립니다.</h2>
+ </div>
+ <!-- adBox -->
+
+ <article id="brandBox">
+  <h2>KGC BRAND</h2>
+  <div class="menu_box">
+   <ul>
+    <li class="green"><a href="#">menu01</a></li>
+    <li><a href="#">menu02</a></li>
+    <li class="green"><a href="#">menu03</a></li>
+    <li><a href="#">menu04</a></li>
+    <li class="green"><a href="#">menu05</a></li>
+    <li><a href="#">menu06</a></li>
+   </ul>
+  </div>
+  <div class="content con_01">
+   <ul>
+    <li class="image content_01">제품이미지1</li>
+    <li class="content_name h_01">에브리타임 30포</li>
+    <div class="clearfix"></div>
+    <li class="content_text_01">제품설명</li>
+   </ul>
+  </div>
+  <div class="content con_02">
+   <ul>
+    <li class="image content_02">제품이미지2</li>
+    <li class="content_name h-02">화애락진</li>
+    <div class="clearfix"></div>
+    <li class="content_text_02">제품설명</li>
+   </ul>
+  </div>
+  <div class="content con_03">
+   <ul>
+    <li class="image content_03">제품이미지3</li>
+    <li class="content_name h_03">천녹톤</li>
+    <div class="clearfix"></div>
+    <li class="content_text_03">제품설명</li>
+   </ul>
+  </div>
+ </article>
+ <!-- brandBox -->
+
+ <article id="eventBox">
+  <h2>KGC EVENT</h2>
+  <div class="image_01">
+   <ul>
+    <li class="event_image_01">이미지1</li>
+    <li class="event_image_name">제품명</li>
+   </ul>
+  </div>
+  <div class="image_02">
+   <ul>
+   <li class="event_image_02">이미지2</li>
+   <ul class="image_03_box">
+    <li class="event_image_03">이미지3</li>
+   </ul>
+   <li class="event_image_04">이미지4</li>
+   </ul>
+  </div>
+  <div class="clearfix"></div>
+ </article>
+ <!-- eventBox -->
+
+ <article id="storeBox">
+  <h2>KGC STORE</h2>
+    <div class="kgcstore_srch">매장명 또는 지역명 입력</div>
+    <div class="kgcstore_map">지도로 매장찾기&gt;</div>
+ </article>
+ <!-- storeBox -->
+
+ <article id="contentBox">
+  <ul class="conbox_01">
+   <h3>KGC뉴스</h3>
+    <li class="news_image con_image">뉴스이미지</li>
+    <li class="news_title con_title">뉴스제목</li>
+    <li class="news_con con_text">뉴스내용</li>
+  </ul>
+  <ul class="conbox_02">
+   <h3>KGC사회공헌</h3>
+    <li class="social_image con_image">공헌이미지</li>
+    <li class="social_title con_title">공헌제목</li>
+    <li class="social_con con_text">공헌내용</li>
+  </ul>
+  <ul class="conbox_03">
+   <h3>KGC레시피</h3>
+    <li class="recipe_image con_image">레시피이미지</li>
+    <li class="recipe_title con_title">레시피제목</li>
+    <li class="recipe_con con_text">레시피내용</li>
+  </ul>
+  <ul class="con_adbox">
+    <li class="adbox_01">광고박스1</li>
+    <li class="adbox_02">광고박스2</li>
+    
+  </ul>
+ </article>
+ <!-- contentBox -->
+
+  <article id="snsBox">
+  <h2>KGC sns</h2>
+    <div class="snsimage_box">
+      <ul>
+        <li class="snsimage">snsimage01</li>
+        <li>snsimage02</li>
+        <li class="snsimage">snsimage03</li>
+        <li>snsimage04</li>
+        <li>snsimage05</li>
+        <li class="snsimage">snsimage06</li>
+        <li>snsimage07</li>
+        <li class="snsimage">snsimage08</li>
+      </ul>
+    </div>
+ </article>
+ <!-- snsBox -->
+
+  <div id="siteMap">
+    <div class="brand">브랜드
+      <ul>
+        <li>정관장</li>
+        <li>굿베이스</li>
+        <li>동인비</li>
+        <li>지니펫</li>
+        <li>사푼사푼</li>
+        <li>라운지1899</li>
+      </ul>
+
+    </div>
+
+    <div class="story">인삼이야기
+      <ul>
+        <li>정관장</li>
+        <li>굿베이스</li>
+        <li>동인비</li>
+        <li>지니펫</li>
+        <li>사푼사푼</li>
+      </ul>
+    </div>
+    <div class="event">이벤트
+      <ul>
+        <li>진행중 이벤트</li>
+        <li>지난 이벤트</li>
+        <li>당첨자</li>
+        <li>체험키트 신청</li>
+        <li>홍이장군 체험후기</li>
+        <li>아이패스 체험후기</li>
+      </ul>
+    </div>
+    <div class="guide">매장안내
+      <ul>
+        <li>국내 매장 찾기</li>
+        <li>매장서비스</li>
+        <li>매장결제수단</li>
+        <li>매장 개설안내</li>
+        <li>명예 가맹점</li>
+      </ul>
+    </div>
+    <div class="center">고객센터
+      <ul>
+        <li>고객의 소리</li>
+        <li>CCM소비자중심경영</li>
+      </ul>
+    </div>
+    <div class="intro">회사소개
+      <div class="clearfix"></div>
+      <ul>
+        <li>KGC소개</li>
+        <li>지속가능경영</li>
+        <li>홍보센터</li>
+        <li>인재채용</li>
+      </ul>
+    </div>
+  </div>
+  <!-- siteMap -->
+
+<div id="productMap">
+  <h3>정관장 제품보기</h3>
+  <div class="productmap_sub_01">정관장 홍삼
+    <ul>
+      <li>정관장 홍삼</li>
+      <li>홍삼달임액</li>
+      <li>홍삼분</li>
+    </ul>
+  </div>
+  <div class="productmap_sub_02">홍삼정
+    <ul>
+      <li>홍삼정 프리미엄</li>
+      <li>홍삼정</li>
+      <li>홍삼정 편의</li>
+      <li>에브리타임</li>
+    </ul>
+  </div>
+  <div class="productmap_sub_03">홍삼토닉
+    <ul>
+      <li>홍삼톤</li>
+      <li>홍삼진</li>
+      <li>홍삼원</li>
+    </ul>
+  </div>
+  <div class="productmap_sub_04">키즈.청소년
+    <ul>
+      <li>홍이장군</li>
+      <li>아이패스</li>
+      <li>아이키커 </li>
+    </ul>
+  </div>
+  <div class="productmap_sub_05">특정기능
+    <ul>
+      <li>화애락</li>
+      <li>홍천웅</li>
+      <li>알파프로젝트 </li>
+    </ul>
+  </div>
+  <div class="productmap_sub_06">한방
+    <ul>
+      <li>황진단</li>
+      <li>활기</li>
+      <li>정옥고</li>
+    </ul>
+  </div>
+  <div class="productmap_sub_07">녹용
+    <ul>
+      <li>천녹</li>
+    </ul>
+  </div>
+  <div class="productmap_sub_08">기호.음료
+    <ul>
+      <li>기호식품</li>
+      <li>홍삼차</li>
+      <li>음료</li>
+    </ul>
+  </div>
+  <div class="productmap_sub_09">선물세트
+    <ul>
+      <li>선물세트</li>
+    </ul>
+  </div>
+</div>
+  <!-- productmap -->
+
+<footer id="footerBox">
+  <div class="menu_box">
+    <ul>
+      <li>개인정보처리방침</li>
+      <li>이용약관</li>
+      <li>이메일무단수집거부</li>
+      <li>전자가맹계약시스템</li>
+      <li>매장개설안내</li>
+    </ul>
+  </div>
+  <div class="logo">KGC인삼공사</div>
+  <address class="footer_address">
+    (주)--<br />고객만족센터:080-000-0000<br />copyright-
+  </address>
+  <div class="global">global site</div>
+  <div class="family">family site</div>
+  <div class="sns">
+    <ul class="sns_box">
+      <li>f</li>
+      <li>t</li>
+      <li>yt</li>
+      <li>in</li>
+      <li>n</li>
+      <li>ka</li>
+      <li class="logo">ccm</li>
+    </ul>
+  </div>
+</footer>
+</div>
+ </body></html>
